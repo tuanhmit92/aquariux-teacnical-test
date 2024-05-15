@@ -8,7 +8,7 @@
 
 ## Project Overview: Building a Weather App using React.js
 
-### Project Description:
+### Project Description
 
 This project is a weather app designed to provide users with weather information based on their input city or country name. It utilizes the OpenWeatherAPI to fetch weather data and displays the results accordingly.
 
@@ -35,12 +35,12 @@ This project is a weather app designed to provide users with weather information
 - HTML/CSS: Markup and styling languages for structuring and styling web content.
 - OpenWeatherAPI: To get data weather.
 
-## Project Deliverables:
+## Project Deliverables
 
 - Fully functional React.js application.
 - Implementation of design elements and functionality described in the provided document.
 - Well-documented code with comments explaining key functionality and design decisions.
 
-## Conclusion:
+## Conclusion
 
 This project aims to demonstrate proficiency in building a multi-page website using React.js while adhering to a provided design specification. By implementing the described functionality and design elements, the resulting website will provide users with an intuitive and interactive experience with UI
