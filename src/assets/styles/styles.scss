@@ -1,0 +1,42 @@
+@import "mixin-function";
+@import "font-family";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  transition: linear 0.5s all;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto-Sans", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif, Helvetica, sans-serif;
+}
+
+input {
+  border: none;
+  &:focus-visible {
+    outline: none;
+  }
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,66 @@
+@import "@assets/styles/mixin-function";
+
+.search-history {
+  margin: 20px 0 0;
+  &__wrapper {
+    background-color: var(--bg-opacity-20);
+    padding: 20px;
+    border-radius: 20px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__item {
+      background-color: var(--bg-opacity-40);
+      padding: 12px 10px 14px 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 16px;
+      margin: 10px 0;
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 5px;
+        &__datetime {
+          color: var(--text-opacity);
+          font-size: 14px;
+        }
+      }
+      &__group-btn {
+        width: auto;
+        display: flex;
+        align-items: center;
+        &__btn {
+          width: 34px;
+          height: 34px;
+          background-color: var(--bg-icon);
+          border: 2px solid var(--border-icon);
+          border-radius: 50%;
+          position: relative;
+          margin-left: 10px;
+          cursor: pointer;
+          img {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include translate(-50%, -50%);
+          }
+        }
+      }
+    }
+    @include mobile-screen {
+      &__item {
+        padding: 10px;
+        &__info {
+          display: block;
+          &__datetime {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@mixin mobile-screen {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin translate($expresionX, $expresionY) {
+  -webkit-transform: translate($expresionX, $expresionY);
+  -moz-transform: translate($expresionX, $expresionY);
+  -o-transform: translate($expresionX, $expresionY);
+  transform: translate($expresionX, $expresionY);
+}
+@mixin translateX($expresion) {
+  -webkit-transform: translateX($expresion);
+  -moz-transform: translateX($expresion);
+  -o-transform: translateX($expresion);
+  transform: translateX($expresion);
+}
+@mixin translateY($expresion) {
+  -webkit-transform: translateY($expresion);
+  -moz-transform: translateY($expresion);
+  -o-transform: translateY($expresion);
+  transform: translateY($expresion);
+}

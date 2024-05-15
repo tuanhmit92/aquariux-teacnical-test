@@ -1,0 +1,48 @@
+@import "../../../assets/styles/mixin-function";
+
+.input {
+  background-color: rgba($color: #ffffff, $alpha: 0.2);
+  display: inline-block;
+  padding: 20px 22px 18px;
+  width: 80%;
+  border-radius: 20px;
+  position: relative;
+  label {
+    opacity: 0.4;
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    color: var(--black);
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+  }
+  input {
+    display: block;
+    background-color: transparent;
+    line-height: 22px;
+    width: 100%;
+    color: var(--black);
+    &:focus + label,
+    &:valid + label {
+      top: 10px;
+      font-size: 10px;
+    }
+  }
+  @include mobile-screen {
+    padding: 10px 12px 8px;
+    width: 75%;
+    border-radius: 8px;
+    font-size: 12px;
+    label {
+      left: 12px;
+    }
+    input {
+      &:focus + label,
+      &:valid + label {
+        top: 6px;
+        font-size: 8px;
+      }
+    }
+  }
+}
